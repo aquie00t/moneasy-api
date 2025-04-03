@@ -1,0 +1,10 @@
+# Node Modules Directory
+node_modules
+
+# Build Directory
+dist
+
+# Enviroment files
+.env.development
+.env.test
+.env.production
