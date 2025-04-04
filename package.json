@@ -1,51 +1,65 @@
 {
-  "name": "moneasy-api",
-  "version": "0.0.1",
-  "description": "Moneasy API Web Client App",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "build": "tsc",
-    "start": "node ./dist/.",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix",
-    "format": "prettier --write .",
-    "prepare": "husky"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aquie00t/moneasy-client.git"
-  },
-  "keywords": [
-    "moneasy"
-  ],
-  "author": "Aquie",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/aquie00t/moneasy-client/issues"
-  },
-  "homepage": "https://github.com/aquie00t/moneasy-client#readme",
-  "lint-staged": {
-    "**/*.ts": [
-      "eslint --fix",
-      "prettier --write"
-    ]
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.23.0",
-    "@types/node": "^22.14.0",
-    "@typescript-eslint/eslint-plugin": "^8.29.0",
-    "@typescript-eslint/parser": "^8.29.0",
-    "eslint": "^9.23.0",
-    "eslint-config-prettier": "^10.1.1",
-    "eslint-plugin-prettier": "^5.2.6",
-    "globals": "^16.0.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.5.0",
-    "nodemon": "^3.1.9",
-    "prettier": "^3.5.3",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.29.0"
-  }
+	"name": "moneasy-api",
+	"version": "0.0.1",
+	"description": "Moneasy API Web Client App",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest",
+		"build": "tsc",
+		"start": "node NODE_ENV=production ./dist/.",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix",
+		"format": "prettier --write .",
+		"prepare": "husky",
+		"dev": "nodemon"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aquie00t/moneasy-client.git"
+	},
+	"keywords": [
+		"moneasy"
+	],
+	"author": "Aquie",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/aquie00t/moneasy-client/issues"
+	},
+	"homepage": "https://github.com/aquie00t/moneasy-client#readme",
+	"lint-staged": {
+		"**/*.ts": [
+			"eslint --fix",
+			"prettier --write"
+		]
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.23.0",
+		"@types/cors": "^2.8.17",
+		"@types/express": "^5.0.1",
+		"@types/helmet": "^0.0.48",
+		"@types/morgan": "^1.9.9",
+		"@types/node": "^22.14.0",
+		"@types/winston": "^2.4.4",
+		"@typescript-eslint/eslint-plugin": "^8.29.0",
+		"@typescript-eslint/parser": "^8.29.0",
+		"eslint": "^9.23.0",
+		"eslint-config-prettier": "^10.1.1",
+		"eslint-plugin-prettier": "^5.2.6",
+		"globals": "^16.0.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.5.0",
+		"nodemon": "^3.1.9",
+		"prettier": "^3.5.3",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.2",
+		"typescript-eslint": "^8.29.0"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.4.7",
+		"express": "^5.1.0",
+		"helmet": "^8.1.0",
+		"morgan": "^1.10.0",
+		"winston": "^3.17.0"
+	}
 }
